@@ -29,7 +29,7 @@ namespace Tarea4
             if (lsClientes.Count == 1)
             {
                 Session["Cliente"] = lsClientes[0];
-                Server.Transfer("MenuPrincipal.aspx");
+                Server.Transfer("MenúPrincipal.aspx");
             }
         }
 

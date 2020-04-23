@@ -75,8 +75,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ActualizarPago.aspx" />
+    <Content Include="ContenidoTablas.aspx" />
+    <Content Include="DatosPrestamo.aspx" />
     <Content Include="Login.aspx" />
-    <Content Include="MenuPrincipal.aspx" />
+    <Content Include="MenúPrincipal.aspx" />
     <Content Include="Préstamos_Modelo.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Préstamos_Modelo.Context.cs</LastGenOutput>
@@ -90,6 +93,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActualizarPago.aspx.cs">
+      <DependentUpon>ActualizarPago.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ActualizarPago.aspx.designer.cs">
+      <DependentUpon>ActualizarPago.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Avalan.cs">
       <DependentUpon>Préstamos_Modelo.tt</DependentUpon>
     </Compile>
@@ -98,6 +108,20 @@
     </Compile>
     <Compile Include="Clientes.cs">
       <DependentUpon>Préstamos_Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContenidoTablas.aspx.cs">
+      <DependentUpon>ContenidoTablas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContenidoTablas.aspx.designer.cs">
+      <DependentUpon>ContenidoTablas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DatosPrestamo.aspx.cs">
+      <DependentUpon>DatosPrestamo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DatosPrestamo.aspx.designer.cs">
+      <DependentUpon>DatosPrestamo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Empresas.cs">
       <DependentUpon>Préstamos_Modelo.tt</DependentUpon>
@@ -109,12 +133,12 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MenuPrincipal.aspx.cs">
-      <DependentUpon>MenuPrincipal.aspx</DependentUpon>
+    <Compile Include="MenúPrincipal.aspx.cs">
+      <DependentUpon>MenúPrincipal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MenuPrincipal.aspx.designer.cs">
-      <DependentUpon>MenuPrincipal.aspx</DependentUpon>
+    <Compile Include="MenúPrincipal.aspx.designer.cs">
+      <DependentUpon>MenúPrincipal.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pagos.cs">
       <DependentUpon>Préstamos_Modelo.tt</DependentUpon>
